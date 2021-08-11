@@ -6,8 +6,10 @@ import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
+import java.sql.Connection;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 
 
@@ -33,13 +35,13 @@ public class InsulinGlucagonPump extends JFrame {
         setLayout(new BorderLayout());
 
         setLayout(new FlowLayout());
+
         
-        
+
         Automatic = new JButton("Start the Simulator");
 
         
 
-     
         add(Automatic);
       
       
@@ -76,6 +78,20 @@ public class InsulinGlucagonPump extends JFrame {
 
         new InsulinGlucagonPump();
 
+    }
+
+    public static Connection getConnection() throws Exception {
+
+        try{
+            String driver = "com.mysql.jdbc.Driver";
+            String url = "jdbc:mysql://localhost:3306/InsulinPump";
+            String username = "hey";
+
+        }catch(Exception e){
+            return null;
+        }
+
+        return null;
     }
 
 }

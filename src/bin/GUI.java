@@ -506,17 +506,18 @@ class GUI {
             JButton buttonCoke = new JButton("Drink Coke");
             JButton buttonCake = new JButton("Eat Cake");
             JButton buttonSports = new JButton("Do Sports");
+            JButton buttonRestAndReset = new JButton("Rest and Reset");
            
             buttonCoke.addActionListener(e -> BloodSugar.startBloodSugarChanger(BigDecimal.valueOf(30.0d), 5000));
             buttonCake.addActionListener(e -> BloodSugar.startBloodSugarChanger(BigDecimal.valueOf(50.0d), 5000));
             buttonSports.addActionListener(e -> BloodSugar.startBloodSugChanger(BigDecimal.valueOf(-50.0d), 2500));
+            buttonRestAndReset.addActionListener(e -> BloodSugar.resetBloodSugar());
 
-            buttonCake.setIcon(new ImageIcon(((new ImageIcon("E:/programm/InsulinGlucagon/image/Cake.png")).getImage()).getScaledInstance(50, 50,java.awt.Image.SCALE_SMOOTH)));
-            buttonCoke.setIcon(new ImageIcon(((new ImageIcon("E:/programm/InsulinGlucagon/image/Cola.png")).getImage()).getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH)));
-            buttonSports.setIcon(new ImageIcon(((new ImageIcon("E:/programm/InsulinGlucagon/image/Sports.png")).getImage()).getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH)));
+
             add(buttonCoke);
             add(buttonCake);
             add(buttonSports);
+            add(buttonRestAndReset);
         }
   
  
