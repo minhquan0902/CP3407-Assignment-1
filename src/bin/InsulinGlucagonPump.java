@@ -1,19 +1,14 @@
 package bin;
-
 import java.awt.BorderLayout;
 import java.awt.Component;
-import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
-
-
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
+
 
 
 public class InsulinGlucagonPump extends JFrame {
@@ -26,7 +21,6 @@ public class InsulinGlucagonPump extends JFrame {
 
     public InsulinGlucagonPump() {
 
-        JButton Manually;
         JButton Automatic;
        
         
@@ -37,7 +31,7 @@ public class InsulinGlucagonPump extends JFrame {
         setVisible(true);
 
         setLayout(new BorderLayout());
-        setContentPane(new JLabel(new ImageIcon("E:/programm/InsulinGlucagon/image/insulin.jpg")));
+
         setLayout(new FlowLayout());
         
         
@@ -49,7 +43,7 @@ public class InsulinGlucagonPump extends JFrame {
         add(Automatic);
       
       
-        // Just for refresh :) Not optional!
+
         setSize(399, 399);
         setSize(400, 400);
        

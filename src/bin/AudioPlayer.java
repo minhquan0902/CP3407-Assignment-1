@@ -47,7 +47,7 @@ public class AudioPlayer extends JFrame{
 	}
 	
 	class PlayThread extends Thread{
-		byte tempBuffer[] = new byte[10000];
+		byte[] tempBuffer = new byte[10000];
 
 		public void run(){
 			try{
@@ -57,7 +57,7 @@ public class AudioPlayer extends JFrame{
 				int cnt;
 				while((cnt = audioInputStream.read(
 						tempBuffer,0,tempBuffer.length)) != -1
-						&& stopPlayback == false){
+						&& !stopPlayback){
 					if(cnt > 0){
 						sourceDataLine.write(
 								tempBuffer, 0, cnt);
