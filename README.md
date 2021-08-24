@@ -25,3 +25,38 @@
 
 
 6. Add the dependencies and libraries if the IDE cannot detect them automatically.
+
+7. Open the Terminal and create the database called InsulinPump
+  ```sh
+    $mysql -u mysql -p mysql
+  ```
+  
+  ```sh
+    mysql> CREATE DATABASE InsulinPump
+  ```
+  
+8. Connect to the Database InsulinPump 
+
+  ```sh
+    mysql> connect InsulinPump
+  ```
+  
+9. Create new table called Persons
+  
+  ```sh
+    mysql> CREATE TABLE Persons
+            (
+            username varchar(255),
+            email varchar(255),
+            age varchar(255),
+            weight varchar(255),
+            height varchar(255)
+            );
+  ```
+  
+10. To view Table content, connect to the Database InsulinPump and simply query
+
+  ```sh
+    mysql> select * from Persons
+  ```
+  
