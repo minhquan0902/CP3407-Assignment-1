@@ -158,8 +158,6 @@ class GUI {
             });
 
 
-            
-
 
              // add(labelInsulin);
             add(sliderInsulin);
