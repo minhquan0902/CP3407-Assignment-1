@@ -43,7 +43,7 @@ The problem with this treatment is that the insulin level required depends not o
   ```
   
   ```sh
-    mysql> CREATE DATABASE InsulinPump
+    mysql> CREATE DATABASE InsulinPump;
   ```
   
 7. Connect to the Database InsulinPump 
@@ -74,7 +74,7 @@ The problem with this treatment is that the insulin level required depends not o
             email varchar(255) NOT NULL UNIQUE,
             age   varchar(255),
             weight varchar(255),
-            height varchar(255)
+            height varchar(255),
             PRIMARY KEY (id)
             );
   ```
