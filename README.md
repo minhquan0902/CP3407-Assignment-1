@@ -35,9 +35,9 @@ The problem with this treatment is that the insulin level required depends not o
 4. Open the Project with any IDE (VScode, IntelliJ or Eclipse,...)
 
 
-6. Add the dependencies and libraries if the IDE cannot detect them automatically.
+5. Add the dependencies and libraries if the IDE cannot detect them automatically.
 
-7. Open the Terminal and create the database called InsulinPump
+6. Open the Terminal and create the database called InsulinPump
   ```sh
     $mysql -u mysql -p mysql
   ```
@@ -46,22 +46,36 @@ The problem with this treatment is that the insulin level required depends not o
     mysql> CREATE DATABASE InsulinPump
   ```
   
-8. Connect to the Database InsulinPump 
+7. Connect to the Database InsulinPump 
 
   ```sh
     mysql> connect InsulinPump
   ```
   
-9. Create new table called Persons
+8. Create new table called users for storing users
   
   ```sh
-    mysql> CREATE TABLE Persons
+    mysql> CREATE TABLE users
             (
-            username varchar(255),
-            email varchar(255),
-            age varchar(255),
+            id int NOT NULL AUTO_INCREMENT,
+            username varchar(255) NOT NULL UNIQUE,
+            email varchar(255) NOT NULL UNIQUE,
+            password varchar(255),
+            PRIMARY KEY (id)
+            );
+  ```
+9. Create another table called users_detail for user detail
+
+ ```sh
+    mysql> CREATE TABLE users_detail
+            (
+            id int NOT NULL AUTO_INCREMENT,
+            username varchar(255) NOT NULL UNIQUE,
+            email varchar(255) NOT NULL UNIQUE,
+            age   varchar(255),
             weight varchar(255),
             height varchar(255)
+            PRIMARY KEY (id)
             );
   ```
   
