@@ -18,6 +18,7 @@ The problem with this treatment is that the insulin level required depends not o
 3. Java AWT as UI
 4. Java DB MYSQL Connector
 5. MySQL Server as backend
+6. MD5 hash for password hashing and storing
 
 ## Running the Project Locally guide
 1. Install MySQL: https://dev.mysql.com/downloads/mysql/
