@@ -83,6 +83,8 @@ The problem with this treatment is that the insulin level required depends not o
 10. To view Table content, connect to the Database InsulinPump and simply query
 
   ```sh
-    mysql> select * from Persons
+    mysql> select * from users
   ```
-  
+  ```sh
+    mysql> select * from users_detail
+  ```
